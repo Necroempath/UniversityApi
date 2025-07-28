@@ -7,5 +7,5 @@ public class Student
     public string Email { get; set; }
     public DateTime BirthDate { get; set; }
     
-    public ICollection<Student> StudentCourses { get; set; }
+    public ICollection<StudentCourse> StudentCourses { get; set; }
 }

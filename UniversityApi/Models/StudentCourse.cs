@@ -2,7 +2,6 @@ namespace UniversityApi.Models;
 
 public class StudentCourse
 {
-    public string Id { get; set; }
     public string StudentId { get; set; }
     public string CourseId { get; set; }
     

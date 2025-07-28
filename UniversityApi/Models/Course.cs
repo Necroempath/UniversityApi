@@ -6,5 +6,5 @@ public class Course
     public string Title { get; set; }
     public int Credit { get; set; }
     
-    public ICollection<Student> StudentCourses { get; set; }
+    public ICollection<StudentCourse> StudentCourses { get; set; }
 }
