@@ -10,7 +10,7 @@ public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
     public AppDbContext CreateDbContext(string[] args)
     {
         var options = new DbContextOptionsBuilder<AppDbContext>();
-        options.UseSqlServer(ConfigurationLoader.LoadConfiguration().GetConnectionString("Step"));
+        options.UseSqlServer(ConfigurationLoader.LoadConfiguration().GetConnectionString("Default"));
         
         return new AppDbContext(options.Options);
     }

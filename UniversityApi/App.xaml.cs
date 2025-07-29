@@ -25,7 +25,7 @@ public partial class App : Application
         {
             var options = new DbContextOptionsBuilder<AppDbContext>()
                 .UseSqlServer(ConfigurationLoader.LoadConfiguration()
-                .GetConnectionString("Step"))
+                .GetConnectionString("Default"))
                 .Options;
 
             return new AppDbContext(options);
